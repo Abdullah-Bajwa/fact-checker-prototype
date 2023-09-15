@@ -1,0 +1,101 @@
+INFO:root:hitler was a twink
+INFO:root:hitler was a twink
+INFO:root:hitler was a twink
+INFO:root:hitler was a twink
+INFO:root:hitler was a twink
+INFO:root:raw
+INFO:root:hitler was a twink
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug: * Detected change in 'C:\\Python311\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:36:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:36:42] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:36:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:36:43] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:39:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:39:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:39:55] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:39:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:41:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:41:42] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:42:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:44:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:44:53] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:45:17] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:46:08] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:46:08] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:46:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:46:46] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:46:46] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:48:23] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:48:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:48:58] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:48:58] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:49:15] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:49:15] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:50:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:50:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:50:56] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:50:56] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:51:14] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:51:15] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Dropbox\\cybernator\\Truth-O-Meter-Making-ChatGPT-Truthful\\truthometer\\frontend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-394-124
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:53:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:53:14] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:53:14] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:54:43] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Sep/2023 11:54:43] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Python311\\Lib\\site-packages\\streamlit\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
