@@ -1,6 +1,7 @@
 import spacy
 import argparse
 import logging
+import random
 
 from truthometer.external_apis.google_serp_searcher import GoogleSerpSearcher
 from truthometer.nlp_utils.noun_phrase_processor import NounPhraseProcessor
@@ -271,7 +272,7 @@ class FactCheckerViaWeb():
 
         missing_in_snippet_filtered_score_a, map_snip_seed_a = additional_filter(missing_in_snippet_filtered_score, map_snip_seed)
 
-        original_sent, sent_with_error = self.html_builder.insert_bookmarks_in_sentence(current_sentence, missing_in_snippet_filtered_score_a, web_pages, map_seed_hit, map_snip_seed_a)
+        original_sent, sent_with_error = insert_bookmarks_in_sentence(current_sentence, missing_in_snippet_filtered_score_a, web_pages, map_seed_hit, map_snip_seed_a)
         return original_sent, sent_with_error
 
     # fact-check text
@@ -318,5 +319,75 @@ if __name__ == '__main__':
         text = clipboard_get()
     fact_checker = FactCheckerViaWeb()
     page_path = fact_checker.perform_and_report_fact_check_for_text(text)
+
+def replace_upper_lower_case(sentence:str, old_phrase:str, new_phrase:str)->str:
+    sentence_lower = sentence.lower()
+    pos_start = sentence_lower.find(old_phrase.lower())
+    pos_end = pos_start + len(old_phrase)
+    return sentence[0:pos_start] + new_phrase + sentence[pos_end:len(sentence)]
+
+def insert_bookmarks_in_sentence(orig_sentence, suspicious_phrases, web_pages, map_seed_hit, map_snip_seed):
+        tag_map = {}
+        verif_page_content = ""
+        suggested_rewrite = ""
+        sentence_with_marked_errors = orig_sentence + ''
+        verif_sentence = orig_sentence + ''
+        proposed_change_sentence = orig_sentence + ''
+        for phrase in suspicious_phrases:
+            tag = phrase.replace(' ', '_')[0:10] + str(random.randint(1, 999))
+            if phrase in map_seed_hit:
+                hit_num = map_seed_hit[phrase]
+                tag_map[hit_num] = tag
+            else:
+                print("missed phrase "+phrase)
+            #orig_sentence = orig_sentence.replace(phrase, f"<a href=\"#{tag}\">{phrase}</a>")
+            orig_sentence = replace_upper_lower_case(orig_sentence, phrase, f"<a href=\"#{tag}\">{phrase}</a>")
+            sentence_with_marked_errors = replace_upper_lower_case(sentence_with_marked_errors, phrase, f"<s>{phrase}<s>")
+
+        for phrase in suspicious_phrases:
+            if verif_sentence.find(phrase)<0:
+                pos_start = verif_sentence.lower().find(phrase)
+                verif_sentence = verif_sentence[0:pos_start] + f"<s>{phrase}</s>" + verif_sentence[pos_start+len(phrase):10000000]
+            else:
+                verif_sentence = replace_upper_lower_case(verif_sentence, phrase, f"<s>{phrase}</s>")
+        #self.verif_page_content += verif_sentence + '\n <br>'
+        verif_page_content += verif_sentence + '\n'
+
+
+
+        for phrase in suspicious_phrases:
+            if phrase in map_snip_seed:
+                new_phrase = map_snip_seed[phrase]
+                proposed_change_sentence = replace_upper_lower_case(proposed_change_sentence, phrase, f"<i>{new_phrase}</i>")
+        #self.suggested_rewrite += proposed_change_sentence+ '\n <br>'
+        suggested_rewrite += proposed_change_sentence+ '\n'
+
+        background_text_for_sentence = f"<h3>Verification</h3>"
+        count = 0
+        if web_pages:
+            for w in web_pages:
+                if not w:
+                    break
+                title = w.get('name')
+                snippet = w.get('snippet')
+                url = w.get('url')
+                line = f"<p><a href=\"{url}\"> {title}</a></p>"
+                if count in tag_map:
+                    tag_candidate = tag_map[count]
+                    line += f"<br id=\"{tag_candidate}\">" + snippet
+                else:
+                    line += '<br>' + snippet
+
+                background_text_for_sentence += line + '<br>\n'
+                count += 1
+                if count > 7:
+                    break
+
+        #return '<h2>Sentence and its Verification</h2>' + orig_sentence + '\n' + background_text_for_sentence + '<br>\n',  \
+               #sentence_with_marked_errors
+        return verif_page_content, suggested_rewrite
+
+
+
 
 
