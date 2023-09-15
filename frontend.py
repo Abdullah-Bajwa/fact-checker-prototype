@@ -36,8 +36,8 @@ if st.button("Submit"):
 st.write("Note: You can enter text in the input box above and click 'Submit' to perform the fact-check.")
 
 # Improve the overall app layout and styling
-st.sidebar.title("Settings")
-st.sidebar.write("Customize your experience here.")
+#st.sidebar.title("Settings")
+#st.sidebar.write("Customize your experience here.")
 
 # Add some padding and background color to the main content
 st.markdown(
